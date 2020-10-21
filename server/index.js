@@ -4,8 +4,7 @@ const bodyParser = require("body-parser");
 const axios = require('axios');
 let fs = require('fs');
 
-let keyD="KC3vRSZb2cmQsC9k"
-let keyA='nCWfP5cZNWNHqSPB'
+let keyD="YOURKEY"
 let my_key = keyD
 
 app.use(bodyParser.json({limit: '50mb'}));
