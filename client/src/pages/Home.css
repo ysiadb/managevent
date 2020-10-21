@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.navbar {
+  background-color: black !important;
+}
+.navbar .navbar-brand a {
+  font-family: "Monoton", cursive;
+  font-size: 25px;
+  color: white;
+}
+.navbar .nav-item img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  width: 48px;
+  height: auto;
+}
+.navbar .navbar-collapse {
+  display: grid !important;
+  text-align: center;
+}
+.navbar .kep-login-facebook.metro {
+  border-radius: 4px;
+}
+.navbar .kep-login-facebook {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: calc(.27548vw + 7.711px) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s, border-color 0.3s;
+  background-color: #4c69ba;
+  border: calc(.06887vw + .67769px) solid #4c69ba;
+  padding: 3px !important;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    display: grid;
+  }
+}
+
+.body {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+@media screen and (max-width: 500px) {
+  .body {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+.menu {
+  background-color: #f8f9fa !important;
+  padding: 15px;
+  height: 100%;
+}
+
+.result {
+  width: 100%;
+}
+.result h4 {
+  font-family: "Press Start 2P", cursive;
+  padding: 2%;
+  background-color: white;
+  word-spacing: -10px;
+}
+.result .event {
+  margin: 15px;
+  margin-bottom: 30px !important;
+  border: 1px solid beige;
+  padding: 15px;
+  box-shadow: 0em 0em 0.3em 0em beige;
+}
+.result .event .main_infos {
+  display: flex;
+}
+.result .event a {
+  margin-left: 66%;
+  z-index: 4;
+  position: absolute;
+  bottom: 1px;
+  padding: 9px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid beige;
+  font-size: 18px;
+  position: relative;
+  bottom: -25px;
+  right: -285px;
+}
+@media screen and (max-width: 500px) {
+  .result .event a {
+    bottom: -25px;
+    right: -70px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .result .event a {
+    margin-left: 0;
+  }
+}
+.result img {
+  height: 140px;
+  width: auto;
+}
+.result #text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.result .infos h3 {
+  font-weight: 600;
+}
+.result .infos a {
+  margin-left: 66%;
+  z-index: 4;
+  position: absolute;
+  bottom: 1px;
+  padding: 9px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid beige;
+  font-size: 18px;
+  position: relative;
+  bottom: -25px;
+  right: -285px;
+}
+
+.main-event {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .main-event {
+    margin-bottom: 24px;
+  }
+}
+.main-event img {
+  width: 20%;
+}
+
+.infos-event {
+  padding: 20px;
+}
+@media screen and (max-width: 500px) {
+  .infos-event {
+    padding: 0;
+  }
+}
+.infos-event a {
+  padding: 9px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid beige;
+  font-size: 18px;
+  color: black;
+}
+.infos-event .Date {
+  display: flex;
+  align-items: center;
+}
+.infos-event .Date input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.infos-event .Lieu {
+  display: flex;
+}
+.infos-event #localisation {
+  background-image: url(../localisation.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 34px;
+  width: 26px;
+}
+.infos-event #agenda {
+  background-image: url(../agenda.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 26px;
+  width: 26px;
+}
+
+.main-member {
+  margin-top: 15px;
+  display: flex;
+}
+.main-member #avatar {
+  width: 170px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.sorties .sortie {
+  margin-bottom: 30px;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  border: 1px solid beige;
+  padding: 15px;
+  box-shadow: 0em 0em 0.3em 0em beige;
+}
+.sorties img {
+  height: 140px;
+  width: auto;
+}
+.sorties #text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.sorties .infos {
+  margin-left: 30px;
+}
+.sorties .infos h3 {
+  font-weight: 600;
+}
+.sorties .infos a {
+  margin-left: 66%;
+  z-index: 2;
+  position: absolute;
+  bottom: 1px;
+  padding: 9px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid beige;
+  font-size: 18px;
+}
+
+.main-section {
+  display: flex;
+}
+.main-section .participants {
+  background-color: #f8f9fa !important;
+  padding: 15px;
+  text-align: center;
+}
+.main-section .users {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-section .chat {
+  padding: 20px;
+  width: 100%;
+}
+.main-section .chat .newmessage {
+  display: flex;
+}
+
+.App .newsession {
+  background-image: url("../concert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  padding: 3%;
+}
+.App .newuser {
+  display: grid;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 2%;
+  box-shadow: 0em 0em 1em 0em beige;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+  .App .newuser {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .App .newuser {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.App .newuser h4 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.App .newuser input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid beige;
+  margin-bottom: 15px;
+}
+.App .newuser #submit {
+  border: 1px solid black;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0em 0em 1em 0em beige;
+  color: white;
+  background-color: black;
+}
+
+/*# sourceMappingURL=Home.css.map */
